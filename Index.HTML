@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Famitha | AI & Data Science Student</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: #f8fafc;
+            line-height: 1.6;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(15, 23, 42, 0.95);
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        section {
+            padding: 100px 8%;
+            min-height: 100vh;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(135deg, #0f172a, #172554);
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 span {
+            color: #38bdf8;
+        }
+
+        .hero p {
+            font-size: 20px;
+            color: #cbd5e1;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #38bdf8;
+            color: #0f172a;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: #7dd3fc;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 35px;
+            margin-bottom: 40px;
+            color: #38bdf8;
+        }
+
+        .about {
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+            color: #cbd5e1;
+            font-size: 18px;
+        }
+
+        .skills-container,
+        .projects-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 25px rgba(56, 189, 248, 0.2);
+        }
+
+        .card h3 {
+            color: #38bdf8;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #cbd5e1;
+        }
+
+        .education {
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .education-box {
+            background: #1e293b;
+            padding: 30px;
+            border-radius: 15px;
+        }
+
+        .education-box h3 {
+            color: #38bdf8;
+            margin-bottom: 10px;
+        }
+
+        .contact {
+            text-align: center;
+        }
+
+        .contact p {
+            margin: 12px 0;
+            color: #cbd5e1;
+        }
+
+        .contact a {
+            color: #38bdf8;
+            text-decoration: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #020617;
+            color: #94a3b8;
+        }
+
+        @media (max-width: 700px) {
+            header {
+                padding: 15px 5%;
+            }
+
+            nav a {
+                margin-left: 10px;
+                font-size: 12px;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            .hero p {
+                font-size: 17px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Famitha</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- HOME -->
+<section class="hero" id="home">
+    <div>
+        <h1>Hi, I'm <span>Famitha</span> 👋</h1>
+
+        <p>AI & Data Science Student | Future Tech Professional</p>
+
+        <a href="#about" class="btn">Explore My Portfolio</a>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2 class="title">About Me</h2>
+
+    <div class="about">
+        <p>
+            I am an Artificial Intelligence and Data Science student
+            passionate about technology, programming and problem solving.
+            I enjoy learning new technologies and creating interesting
+            projects using programming and AI.
+        </p>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+    <h2 class="title">My Skills</h2>
+
+    <div class="skills-container">
+
+        <div class="card">
+            <h3>Python</h3>
+            <p>Programming and problem solving</p>
+        </div>
+
+        <div class="card">
+            <h3>HTML</h3>
+            <p>Creating modern web pages</p>
+        </div>
+
+        <div class="card">
+            <h3>CSS</h3>
+            <p>Designing responsive websites</p>
+        </div>
+
+        <div class="card">
+            <h3>JavaScript</h3>
+            <p>Adding interaction to websites</p>
+        </div>
+
+        <div class="card">
+            <h3>Data Science</h3>
+            <p>Learning data analysis and AI concepts</p>
+        </div>
+
+        <div class="card">
+            <h3>Git & GitHub</h3>
+            <p>Version control and project hosting</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <h2 class="title">My Projects</h2>
+
+    <div class="projects-container">
+
+        <div class="card">
+            <h3>Expense Tracker</h3>
+            <p>
+                A simple application to track and manage daily expenses.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Smart Calculator</h3>
+            <p>
+                A calculator project designed to perform mathematical
+                operations easily.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>My First Game</h3>
+            <p>
+                A beginner-friendly game project created while learning
+                programming and development.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+    <h2 class="title">Education</h2>
+
+    <div class="education">
+        <div class="education-box">
+
+            <h3>B.Tech / Degree in Artificial Intelligence & Data Science</h3>
+
+            <p>
+                Currently pursuing my college education and developing
+                my skills in programming, artificial intelligence,
+                data science and technology.
+            </p>
+
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2 class="title">Contact Me</h2>
+
+    <div class="contact">
+
+        <p>📧 Email:
+            <a href="mailto:yourmail@example.com">
+                yourmail@example.com
+            </a>
+        </p>
+
+        <p>💻 GitHub:
+            <a href="https://github.com/yourusername" target="_blank">
+                github.com/yourusername
+            </a>
+        </p>
+
+        <p>🔗 LinkedIn:
+            <a href="https://www.linkedin.com/" target="_blank">
+                My LinkedIn
+            </a>
+        </p>
+
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Famitha. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
